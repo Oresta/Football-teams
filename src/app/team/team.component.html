@@ -1,0 +1,42 @@
+<h4 class="component-title">TeamComp</h4>
+<div class="component-box">
+  <div class="component-row">
+    <div class="component-col component-col-label">
+      <span>Team:</span>
+    </div>
+    <div class="component-col component-col-value">
+      <label for="team-select" class="team-select">
+        <select name="team" id="team-select" #selected (change)="onChange(selected.value)">
+          <option value="" disabled selected>Please select</option>
+          <ng-container *ngFor="let team of teams; let i = index;">
+            <option [value]="i">{{team.teamName}}</option>
+          </ng-container>
+        </select>
+      </label>
+    </div>
+  </div>
+  <ng-container *ngIf="selectedTeam">
+    <div class="component-row">
+      <div class="component-col component-col-label">
+        <span>Rate:</span>
+      </div>
+      <div class="component-col component-col-value">
+        <ul class="rate">
+          <li class="rate-item" *ngFor="let number of [0,1,2,3,4]; let i = index;">
+            <svg xmlns="http://www.w3.org/2000/svg" [class.active]="i < selectedTeam.rate" fill="#cccccc" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="component-row">
+      <div class="teacomponentm-col component-col-label">
+        <span>Plays in UEFA:</span>
+      </div>
+      <div class="component-col component-col-value">
+        <span class="bold">
+          {{selectedTeam.inUefaLeague ? 'Yes' : 'No'}}
+        </span>
+      </div>
+    </div>
+  </ng-container>
+</div>

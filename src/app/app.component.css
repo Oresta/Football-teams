@@ -1,0 +1,27 @@
+.wrapper {
+  padding: 40px 30px;
+  display: flex;
+}
+
+.country-wrapper {
+  width: 300px;
+}
+
+.team-wrapper {
+  width: 400px;
+}
+
+@media screen and (max-width: 680px) {
+  .wrapper {
+    flex-wrap: wrap;
+  }
+
+  .country-wrapper,
+  .team-wrapper {
+    width: 100%;
+  }
+
+  .team-wrapper {
+    margin-bottom: 50px;
+  }
+}

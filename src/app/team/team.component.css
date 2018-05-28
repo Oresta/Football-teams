@@ -1,0 +1,46 @@
+.rate-item {
+  margin: 0 1px;
+  display: inline-block;
+}
+
+.rate-item .active {
+  fill: #000;
+}
+
+.team-select {
+  border: 2px solid black;
+  border-radius: 10px;
+  position: relative;
+  display: block;
+  z-index: 10;
+}
+
+.team-select select {
+  width: 100%;
+  padding: 7px 40px 7px 5px;
+  margin: 0;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  border-radius: 0;
+  background: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: block;
+}
+
+.team-select:after {
+  content: '';
+  width: 35px;
+  height: 100%;
+  line-height: 38px;
+  background: #e6e6e6 url('assets/icons/caret-icon.png') center/15px auto  no-repeat;
+  border-left: 2px solid black;
+  border-radius: 0 10px 10px 0;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}

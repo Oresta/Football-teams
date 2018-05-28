@@ -1,0 +1,18 @@
+<h4 class="component-title">CountryComp</h4>
+<div class="component-box country-box">
+  <ng-container *ngIf="currentCountry">
+    <div class="component-row">
+      <div class="component-col component-col-label">
+        <span>Country:</span>
+      </div>
+      <div class="component-col component-col-value">
+        <span class="bold">{{currentCountry?.name}}</span>
+      </div>
+    </div>
+    <div class="component-row">
+      <div class="component-col">
+        <img class="flag-img" [src]="currentCountry?.flagUrl" alt="Country flag" />
+      </div>
+    </div>
+  </ng-container>
+</div>

@@ -1,0 +1,26 @@
+{
+  "de": {
+    "name": "Germany",
+    "flagUrl": "https://upload.wikimedia.org/wikipedia/en/b/ba/Flag_of_Germany.svg"
+  },
+  "es": {
+    "name": "Spain",
+    "flagUrl": "https://upload.wikimedia.org/wikipedia/en/9/9a/Flag_of_Spain.svg"
+  },
+  "fr": {
+    "name": "France",
+    "flagUrl": "https://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg"
+  },
+  "gb": {
+    "name": "United Kingdom of Great Britain and Northern Ireland",
+    "flagUrl": "https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg"
+  },
+  "it": {
+    "name": "Italy",
+    "flagUrl": "https://upload.wikimedia.org/wikipedia/en/0/03/Flag_of_Italy.svg"
+  },
+  "ua": {
+    "name": "Ukraine",
+    "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/4/49/Flag_of_Ukraine.svg"
+  }
+}
